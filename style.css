@@ -15,6 +15,9 @@
   list-style: none;
   overflow-x: hidden;
 }
+*::-webkit-scrollbar{
+  display: none;
+}
 body{
   font-family: 'Poppins' 'Open Sans', sans-serif;
     font-size: 18px;
@@ -101,6 +104,9 @@ nav a button:hover{
   box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.1);
   padding: 70px;
 }
+.first-box:hover{
+  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.2);
+}
 .first-box img{
   width: 800px;
 }
@@ -126,6 +132,9 @@ nav a button:hover{
   padding: 70px;
   margin: 40px 0;
 }
+.second-box:hover{
+  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.2);
+}
 .second-box img{
   width: 800px;
 }
@@ -150,10 +159,9 @@ nav a button:hover{
   text-align: center;
   width: 50%;
   box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.2);
-  margin: 50px auto -30px;
+  margin: 50px auto 10px;
   border-radius: 5px;
   padding: 14px;
-  z-index: 10px;
 }
 .ready-to h3{
   font-family: 'poppins';
@@ -266,6 +274,246 @@ footer .pp{
 
 /* mobile */
 
+@media screen and (max-width: 950px) {
+  .hero{
+    width: 100%;
+    /* height: 100vh; */
+    padding: 30px 40px;
+    background-image: url(/images/bg-hero-desktop.svg);
+    background-position: center;
+    background-size: cover;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  
+  nav a img{
+    width: 150px;
+  }
+  nav a button{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    width: 100px;
+    border-radius: 30px;
+    color: var(--Very-Dark-Cyan);
+    background-color: white;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 8px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  nav a button:hover{
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.2);
+  }
+  .hero-section{
+    align-items: center;
+    gap: 4em;
+  }
+  .hero-section img{
+    width: 1300px;
+  }
+  .build{
+    display: flex;
+    flex-direction: column;
+  }
+  .build h1{
+    font-family: 'poppins';
+    font-weight: 600;
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 20px;
+  }
+  .build p{
+    font-family: 'poppinsOpen Sans';
+    font-weight: 400;
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 20px;
+  }
+  .build a button{
+    width: 50%;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--Very-Pale-Cyan);
+  }
+  .build a button:hover{
+    cursor: pointer;
+    background-color: var(--opacity-color);
+  }
+  
+  .contaniner{
+    padding: 30px 40px;
+  }
+  .first-box{
+    width: 100%;
+    align-items: center;
+    gap: 5em;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+  }
+  .first-box img{
+    width: 750px;
+  }
+  .first-box-block{
+    display: block;
+  }
+  .first-box-block h2{
+    font-family: 'poppins';
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 14px;
+  }
+  .first-box-block p{
+    font-family: 'Open Sans';
+    color: var(--Grayish-Blue);
+  }
+  .second-box{
+    width: 100%;
+    align-items: center;
+    gap: 5em;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 30px 0;
+  }
+  .second-box img{
+    width: 750px;
+  }
+  .second-box-block{
+    display: block;
+  }
+  .second-box-block h2{
+    font-family: 'poppins';
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 14px;
+  }
+  .second-box-block p{
+    font-family: 'Open Sans';
+    color: var(--Grayish-Blue);
+  }
+  
+  /* ready to build our community */
+  .ready-to{
+    background-color: white;
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.2);
+    margin: 50px auto 10px;
+    border-radius: 5px;
+    padding: 14px;
+    z-index: 10;
+  }
+  .ready-to h3{
+    font-family: 'poppins';
+    color: var(--Very-Dark-Cyan);
+    margin: 16px 0;
+  }
+  .ready-to a button{
+    width: 230px;
+    padding: 13px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--Very-Pale-Cyan);
+    margin-bottom: 16px;
+  
+  }
+  .ready-to a button:hover{
+    cursor: pointer;
+    background-color: var(--opacity-color);
+  }
+  
+  
+  /* footer */
+footer{
+  width: 100%;
+  padding: 50px 40px;
+  background-color: var(--Very-Dark-Cyan);
+}
+footer img{
+  width: 150px;
+  color: white;
+}
+.sub-footer{
+  width: 100%;
+  align-items: center;
+  gap: 2em;
+}
+.footer-block{
+  width: 100%;
+  display: block;
+}
+
+.footer-block p{
+  color: white;
+  font-size: 16px;
+  padding: 10px 0;
+
+}
+.footer-flex{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  /* padding: 10px 0; */
+}
+.footer-flex img{
+  width: 18px;
+  height: 14px;
+}
+.footer-flex p{
+  color: white;
+  font-size: 14px;
+}
+.footer-block-2{
+  width: 100%;
+  flex-direction: column;
+}
+.footer-block-sub{
+  display: block;
+}
+.footer-block-sub p{
+  color: white;
+  font-size: 16px;
+  padding: 8px 0;
+  transition: 1s;
+}
+.footer-block-sub p:hover{
+  display: block;
+  border-bottom: 1px solid white;
+}
+.socia-media{
+  display: flex;
+  gap: 1em;
+}
+.socia-media i{
+  color: white;
+  transition: 0.5s;
+}
+.socia-media i:hover{
+  color: var(--primary-color);
+}
+footer .pp{
+  /* float: none; */
+  font-size: 14px;
+  color: white;
+  padding-top: 50px;
+}
+  .attribution{
+    /* text-align: center; */
+    color: white;
+    font-size: 'poppins';
+    font-size: 14px;
+  }
+  .attribution a{
+    color: var(--primary-color);
+    font-size: 'Open Sans';
+    font-weight: 700;
+  }
+}
 @media screen and (max-width: 600px) {
   .hero{
     width: 100%;
@@ -308,7 +556,7 @@ footer .pp{
     gap: 5em;
   }
   .hero-section img{
-    width: 300px;
+    width: 350px;
   }
   .build{
     display: flex;
@@ -327,7 +575,7 @@ footer .pp{
     margin-bottom: 20px;
   }
   .build a button{
-    width: 100%;
+    width: 50%;
     padding: 12px;
     border-radius: 30px;
     border: none;
