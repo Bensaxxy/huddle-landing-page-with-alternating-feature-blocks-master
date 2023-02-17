@@ -630,7 +630,7 @@ nav button{
 /* footer */
 footer{
   width: 100%;
-  padding: 100px 40px;
+  padding: 100px 40px 10px;
   background-color: var(--Very-Dark-Cyan);
   position: relative;
 }
@@ -691,8 +691,9 @@ footer img{
   border-bottom: 1px solid white;
 }
 .socia-media{
+  margin-top: 1em;
   display: flex;
-  gap: 1em;
+  colum-gap: 1.5em;
 }
 
 .socia-media a{
