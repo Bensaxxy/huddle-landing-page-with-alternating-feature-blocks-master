@@ -498,7 +498,7 @@ footer .pp{
   /* background image */
 .background-image{
   width: 100%;
-  padding: 50px 30px;
+  padding: 50px 20px;
   background-image: url(/images/bg-hero-mobile.svg);
   background-color: hsl(193, 100%, 96%);
   background-position: center;
@@ -557,7 +557,7 @@ nav a button{
 
 /* container */
 .container{
-  padding: 30px 40px;
+  padding: 30px 20px;
   margin-bottom: 12em;
 }
 
