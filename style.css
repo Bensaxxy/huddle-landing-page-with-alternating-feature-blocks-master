@@ -623,7 +623,7 @@ nav button{
 }
 @media screen and (max-width: 400px) {
   .ready-to{
-    left: 1.5em;
+    left: 1.7em;
     width: 80%;
   }  
 }
@@ -693,7 +693,7 @@ footer img{
 .socia-media{
   margin-top: 1em;
   display: flex;
-  colum-gap: 1.5em;
+  column-gap: 1.5em;
 }
 
 .socia-media a{
@@ -723,6 +723,7 @@ footer .pp{
   font-size: 'poppins';
   margin-top: 1em;
   text-align: center;
+  font-size: 16px;
 }
 .attribution a{
   color: var(--primary-color);
